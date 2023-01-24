@@ -13,3 +13,6 @@
 .mat-card {
     margin-right: 4px;
 }
+.product-component {
+    min-height: 724px;
+}
