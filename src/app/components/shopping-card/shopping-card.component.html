@@ -1,3 +1,32 @@
-<p>
-  shopping-card works!
-</p>
+<div class="shoping-component">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tumb</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Imported</th>
+        <th scope="col">Price</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of shoppingCard">
+        <td>{{item.id}}</td>
+        <td><img src="{{item.image}}" width="50px" alt=""></td>
+        <td>{{item.title}}</td>
+        <td style="width: 50vw">{{item.description}}</td>
+        <td>{{item.imported ? 'Imported' : 'Not imported'}}</td>
+        <td>${{item.price}} </td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteItem(item)">Delete</button>
+        </td>
+      </tr>
+    
+    </tbody>
+  </table>
+  <hr>
+  <h3>Taxes: ${{taxesSumm}} </h3>
+  <h3>Total: ${{+total + +taxesSumm | number : '1.0-2'}}</h3>
+</div>

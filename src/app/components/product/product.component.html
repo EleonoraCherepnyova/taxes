@@ -1,3 +1,19 @@
-<p>
-  product works!
-</p>
+
+<div class="container">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{product.title}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image class="image" src="{{product.image}}">
+      <mat-card-content>
+        <p class="description">
+        {{product.description}}
+        </p>
+        <p>{{product.price | currency}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button class="add-button">Add</button>
+        <button mat-raised-button>Delete</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>

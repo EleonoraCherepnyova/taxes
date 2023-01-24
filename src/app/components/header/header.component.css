@@ -1,1 +1,20 @@
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .nav-items {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-items a {
+    color: white;
+    text-decoration: none;
+  }
+  .home-icon {
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+  .home-icon:hover {
+    cursor: pointer;
+  }
 

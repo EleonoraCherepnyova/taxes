@@ -1,3 +1,19 @@
-<p>
-  products works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-3 my-3" *ngFor="let product of products">
+      <mat-card class="example-card my-card">
+        <mat-card-header>
+          <mat-card-title>{{product.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{product.image}}">
+        <mat-card-content>
+          <p>{{product.price | currency}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button class="add-button" (click)="addToShoppingCard(product)">Add</button>
+          <button mat-raised-button [routerLink]="['/product',product.id]">Details</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

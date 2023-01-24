@@ -1,19 +1,95 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Book",
+      "imported": false,
+      "taxed": false,
+      "description": "When you use .NET to create client-and server-side applications, you have to address a new and large set of security issues. .NET Security shows you what you need to know by covering different aspects of the .NET security model through detailed discussions about the key namespaces. The authors demonstrate how to write .NET code to create secure systems within the .NET Framework. They also discuss possible break-ins to the security model in .NET--and how .NET prevents such intrusions. This tutorial explains how to use the .NET security and cryptographic classes, and functions as a reference manual for developers seeking to understand security implementation in the .NET Framework. Additionally, the .NET Framework requires understanding in many new areas like managed code, permissions, and evidence--all of which this dynamic book covers.",
+      "price": 12.49,
+      "image": "assets/images/book_one.jpg"
+    },
+    {
+      "id": 2,
+      "title": "CD",
+      "imported": false,
+      "taxed": true,
+      "description": "Verbatim CD-R 80MIN Datalife",
+      "price": 14.99,
+      "image": "assets/images/cd.jpg"
+    },
+    {
+      "id": 3,
+      "title": "chocolate bar",
+      "imported": false,
+      "taxed": false,
+      "description": "Enervit, Protein Bar 26% Chocolate & Cream",
+      "price": 0.85,
+      "image": "assets/images/bar.jpg"
+    },
+    {
+      "id": 4,
+      "title": "box of chocolates",
+      "imported": true,
+      "taxed": false,
+      "description": "The Protein Deal Crunchy Double Choco Storm",
+      "price": 10,
+      "image": "assets/images/box-chocolates_1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Perfume",
+      "imported": true,
+      "taxed": true,
+      "description": "Boss Femme Eau de Parfum",
+      "price": 47.5,
+      "image": "assets/images/perfume_1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Perfume",
+      "imported": true,
+      "taxed": true,
+      "description": "Boss Femme Eau de Parfum",
+      "price": 27.99,
+      "image": "assets/images/perfume_2.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Perfume",
+      "imported": false,
+      "taxed": true,
+      "description": "Boss Femme Eau de Parfum",
+      "price": 18.99,
+      "image": "assets/images/perfume_3.jpg"
+    },
+    {
+      "id": 8,
+      "title": "headache pills",
+      "imported": false,
+      "taxed": false,
+      "description": "packet of headache pills",
+      "price": 9.75,
+      "image": "assets/images/pills.jpg"
+    },
+    {
+      "id": 9,
+      "title": "box of chocolates",
+      "imported": true,
+      "taxed": false,
+      "description": "box of imported chocolates",
+      "price": 11.25,
+      "image": "assets/images/box-chocolates_2.jpg"
     }
   ],
-  "comments": [
+  "cards": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Book",
+      "imported": false,
+      "description": "When you use .NET to create client-and server-side applications, you have to address a new and large set of security issues. .NET Security shows you what you need to know by covering different aspects of the .NET security model through detailed discussions about the key namespaces. The authors demonstrate how to write .NET code to create secure systems within the .NET Framework. They also discuss possible break-ins to the security model in .NET--and how .NET prevents such intrusions. This tutorial explains how to use the .NET security and cryptographic classes, and functions as a reference manual for developers seeking to understand security implementation in the .NET Framework. Additionally, the .NET Framework requires understanding in many new areas like managed code, permissions, and evidence--all of which this dynamic book covers.",
+      "price": 12.49,
+      "image": "assets/images/book_one.jpg"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
