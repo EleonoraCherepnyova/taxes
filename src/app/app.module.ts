@@ -10,21 +10,29 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
 import { ShoppingCardComponent } from './components/shopping-card/shopping-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HeaderComponent,
     ProductsComponent,
     ProductComponent,
-    ShoppingCardComponent
-  ],
+    ShoppingCardComponent,
+    LoginComponent,
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

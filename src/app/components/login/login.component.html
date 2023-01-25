@@ -1,0 +1,20 @@
+<div class="grid" style="height: 80vh; margin-top: 100px;">
+  <div class="col"></div>
+  <div class="col">
+    <form class="form-group" [formGroup]="form">
+      <div class="flex justify-content-center mb-4 form-group">
+        <span class="p-float-label">
+          <input id="float-name" type="text" pInputText  style="width: 235px;" formControlName="userName">
+          <label for="float-name">Username</label>
+        </span>
+      </div>
+      <div class="flex justify-content-center mb-4 form-group">
+        <p-password id="float-pass" [toggleMask]="true" formControlName="password"></p-password>
+      </div>
+      <div class="flex justify-content-center">
+        <button pButton type="button" label="Login" style="width: 235px;" (click)="onLogin()"></button>
+      </div>
+    </form>
+  </div>
+  <div class="col"></div>
+</div>
