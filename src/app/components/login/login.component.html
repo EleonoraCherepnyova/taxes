@@ -5,8 +5,10 @@
       <div class="flex justify-content-center mb-4 form-group">
         <span class="p-float-label">
           <input id="float-name" type="text" pInputText  style="width: 235px;" formControlName="userName">
+          <small id="username2-help" class="p-error block" *ngIf="form.controls['userName'].invalid && form.controls['userName'].touched">Username is invalid</small>
           <label for="float-name">Username</label>
         </span>
+       
       </div>
       <div class="flex justify-content-center mb-4 form-group">
         <p-password id="float-pass" [toggleMask]="true" formControlName="password"></p-password>

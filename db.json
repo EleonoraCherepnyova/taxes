@@ -91,5 +91,12 @@
       "price": 12.49,
       "image": "assets/images/book_one.jpg"
     }
+  ],
+  "users": [
+    {
+      "username": "eleonora",
+      "password": "123",
+      "status": "OK"
+    }
   ]
 }
