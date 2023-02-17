@@ -7,7 +7,11 @@ import {MatTableModule} from '@angular/material/table';
 
 import {InputTextModule} from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
+
+
+import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
+import {RatingModule} from 'primeng/rating';
 
 @NgModule({
     imports: [
@@ -18,7 +22,9 @@ import {ButtonModule} from 'primeng/button';
         MatTableModule,
         InputTextModule,
         PasswordModule,
-        ButtonModule],
+        ButtonModule,
+        TableModule,
+        RatingModule],
 
     exports: [
         MatToolbarModule,
@@ -28,7 +34,9 @@ import {ButtonModule} from 'primeng/button';
         MatTableModule,
         InputTextModule,
         PasswordModule,
-        ButtonModule
+        ButtonModule,
+        TableModule,
+        RatingModule
     ]
 })
 export class MaterialModule {
